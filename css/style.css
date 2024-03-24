@@ -1,0 +1,109 @@
+#demo .carousel-inner {
+    height: 710px;
+}
+
+#demo .carousel-inner img {
+    object-fit: cover;
+    height: 100%; 
+    width: 100%; 
+}
+
+#map{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.centroImagen{
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.centroImagen img{
+    object-fit: cover;
+    height: 100%; 
+    width: 75%; 
+}
+
+.imagenCentro{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.section-background {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.redesSocialesSigueImagenes{
+    display: inline-flex;
+    margin-top: 10%;
+}
+.redesSocialesSigue{
+    background-color: #F0E5EB;
+}
+.redesImage{
+    display: inline-flex;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 250px; 
+    height: 250px; 
+    border: 1px solid #efeeee;
+}
+
+@media (max-width: 900px) {
+    .redesImage {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    #demo .carousel-inner {
+        height: 400px; 
+    }
+    .navbar-nav {
+        flex-direction: row;
+        text-align: end;
+        justify-content: flex-end;
+        background-color: rgb(252, 252, 252);
+        width: 30%;
+        padding: 1%;
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    position: relative; 
+}
+
+.form-container,
+.map-container {
+    position: relative; 
+    z-index: 2; 
+}
+
+
+a.btn.botonesColor  {
+        background-color: rgb(114, 73, 24);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+        color: white;
+}
+
+.btn.botonesColor {
+    background-color:  rgb(114, 73, 24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    color: white;
+}

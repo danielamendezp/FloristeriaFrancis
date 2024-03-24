@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Floristeria Francis</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  
+</head>
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+  
+  <nav class="navbar navbar-expand-lg d-lg-block " style="z-index: 2000; background-color: #fff6f1; height: 63px; margin-top: 0;">
+    <div class="container-fluid">
+        <h1 class="fw-bold text-dark m-0">Floristeria Francis</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="font-size: 150%;" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="font-size: 150%;" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="font-size: 150%;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Colecciones
+            </a>
+            <ul class="dropdown-menu bg-light text-black-50" aria-labelledby="navbarDropdown" style="font-size: 150%;">
+              <li><a class="dropdown-item text-black-50" href="matrimonio.html">Matrimonio</a></li>
+              <li><a class="dropdown-item text-black-50" href="sanValentin.html">San Valentín</a></li>
+              <li><a class="dropdown-item text-black-50" href="funerario.html">Funerario</a></li>
+              <li><a class="dropdown-item text-black-50" href="especiales.html">Especiales</a></li>
+          </ul>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 150%;" href="formularioContacto">Contáctenos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel" >
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+    <div class="carousel-item active ">
+        <img src="img/Carrusel/francis.jpg" alt="Organic Food Is Good For Health" class="d-block" style="width:100%">
+        <div class="carousel-caption d-md-block text-dark text-end h-75 w-75">
+            <h5 class="fs-1 mb-lg-5 ">Floristeria Francis</h5>
+            <h5 class="fs-5  mb-lg-5">Los mejores arreglos florales para cada ocasión</h5>
+            <a href="#formularioContacto">
+              <button style="background-color: rgb(184, 111, 111);" class="btn rounded-pill text-light p-2 fs-5">Encuentranos</button>
+            </a>
+            <a href="#servicios">
+              <button  style="background-color: rgb(126, 96, 59);" class="btn rounded-pill text-light p-2 fs-5">Productos</button>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="carousel-item active ">
+      <img src="img/Carrusel/3.jpg" alt="Organic Food Is Good For Health" class="d-block" style="width:100%">
+        <div class="carousel-caption d-md-block text-dark text-end align-middle h-75 w-75">
+        <h5 class="fs-1 mb-lg-5 ">Floristeria Francis</h5>
+        <h5 class="fs-5  mb-lg-5">Mejora tus eventos con arreglos florales</h5>
+        <a href="#formularioContacto">
+          <button style="background-color: rgb(184, 111, 111);" class="btn rounded-pill text-light p-2 fs-5">Encuentranos</button>
+        </a>
+        <a href="#servicios">
+          <button  style="background-color: rgb(126, 96, 59);" class="btn rounded-pill text-light p-2 fs-5">Productos</button>
+        </a>
+
+
+      </div>
+    </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+
+
+<main class="textoCentro mt-lg-2 mt-sm-1">
+  <div class="container" id="nosotros">
+    <section>
+      <div class="row align-items-center h-25">
+        <div class="col-lg-6 mb-sm-1 col-sm-12 mt-sm-2">
+          <div class="centroImagen bg-image hover-overlay shadow-2-strong d-flex fade-in"data-mdb-ripple-color="light">
+            <img src="img/Especiales/3.jpg"  style="object-fit: cover;" class="img-fluid imagenCentro" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="introduccion col-lg-6 mb-sm-1 col-sm-12 fade-item" style=" text-align: justify;">
+          <h4 style=" text-align: center; font-size: 140%;" ><strong>¡Bienvenidos a Floristería Francis!</strong></h4>
+          <p class="text-muted">
+            En Floristería Francis nos dedicamos a plasmar emociones a través de hermosos arreglos florales. Especializados en eventos de todo tipo, desde emotivos funerales hasta románticos matrimonios, pasando por vibrantes fiestas y encantadoras celebraciones de San Valentín, nuestro equipo de expertos floristas trabaja incansablemente para crear composiciones únicas y memorables.
+          </p>
+          <p ><strong>¡Déjanos ser parte de tu historia con flores que hablan por sí mismas en Floristería Francis!</strong></p>
+          <p class="text-muted">
+            En Floristería Francis, entendemos la importancia de cada ocasión especial y nos comprometemos a ofrecerte una experiencia personalizada y llena de belleza floral. Confía en nosotros para convertir tus momentos más importantes en memorias inolvidables.
+          </p>
+          <p class="text-muted">
+            Con más de 20 años de experiencia en la industria floral, Floristería Francis se enorgullece de ser un pilar en la comunidad de San Ramón de Alajuela. Durante estas dos décadas de trabajo apasionado, hemos tenido el privilegio de acompañar a nuestros clientes en momentos emotivos y significativos de sus vidas.
+          </p>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    <hr class="my-5" />
+
+    <section class="text-center" id="servicios">
+      <h4 class="mb-5" style="font-size: 175%;"><strong>Arreglos florales para cada ocasión</strong></h4>
+
+      <div class="row" style="font-size: 140%;">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" style="height: 380px;" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="img/Matrimonio/2.jpg" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 105%;">Matrimonios</h5>
+              <p class="card-text" style="text-align: justify;">
+                Haz que tu día especial sea aún más memorable con los arreglos florales para bodas. Desde impresionantes arcos florales hasta delicados ramos de novia, creado para complementar la belleza de tu evento. 
+              </p>
+              <a href="#!" class="btn botonesColor" data-mdb-ripple-init style="font-size: 90%;">Ver Colección</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" style="height: 380px;" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="img/San Valentin/13.jpg" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 105%;">San Valentin</h5>
+              <p class="card-text" style="text-align: justify; overflow: auto;">
+                Celebra el amor este San Valentín. Desde exquisitos ramos de rosas rojas, cestas de flores, regalos encantadores hasta arreglos personalizados, cada diseño está hecho para expresar tu afecto de manera única.
+              </p>
+              <a href="#!" class="btn botonesColor" data-mdb-ripple-init style="font-size: 90%;">Ver Colección</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" style="height: 380px;" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="img/Funerario/2.jpg" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 105%;">Funerario</h5>
+              <p class="card-text" style="text-align: justify;">
+                Honra y recuerda a tus seres queridos con los arreglos funerarios de Floristería Francis. Desde elegantes coronas y cruces hasta arreglos personalizados, cada diseño está hecho con delicadeza y respeto.
+              </p>
+              <a href="#!" class="btn botonesColor" data-mdb-ripple-init style="font-size: 90%;">Ver Colección</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+
+<div class="container-fluid redesSocialesSigue">
+  <div class="row align-items-center justify-content-center">
+      <h1 class="text-center mt-4 mb-5">Síguenos en Instagram</h1>
+      <div class="col-lg-2 col-sm-3 text-center redesSocialesSigueImagenes">
+          <a href="https://www.facebook.com/FloristeriaFrancis?locale=es_LA" target="_blank">
+              <img class="redesImage" src="img/Especiales/3.jpg" alt="Instagram">
+          </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 text-center redesSocialesSigueImagenes">
+          <a href="https://www.instagram.com/francismendeztrejos/" target="_blank">
+              <img class="redesImage" src="img/Especiales/6.jpg" alt="Instagram">
+          </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 text-center redesSocialesSigueImagenes">
+          <a href="https://www.instagram.com/francismendeztrejos/" target="_blank">
+              <img class="redesImage" src="img/Especiales/9.jpg" alt="Instagram">
+          </a>
+      </div>
+      <div class="col-12 text-center mt-5 mb-5">
+        <a href="https://www.instagram.com/francismendeztrejos/" target="_blank">
+          <button type="button" class="btn botonesColor btn-rounded">@FloristeriaFrancis</button>
+        </a>
+      </div>
+  </div>
+</div>
+
+
+
+<section class="container-fluid section-background" id="sec-0abe" data-image-height="700" style="background-image: url('img/flor.webp');">
+  <div class="overlay"></div>
+  <div class="row">
+        <div class="u-form u-form-1 col-lg-7 col-sm-12 mt-4 form-container" id="formularioContacto" action="https://formsubmit.co/mendez.daniela1199@gmail.com" method="POST">
+
+                  <h3 class="u-text u-text-2 text-light text-center">¡Envíanos tu consulta o cotización!</h3>
+                  <form class="container-fluid mt-lg-4 mb-lg-4 w-50" id="formularioContacto" onsubmit="sendEmail()">
+                      <div class="mb-3">
+                          <label for="nombreCompleto" class="form-label text-light">Nombre Completo</label>
+                          <input type="text" class="form-control" id="nombreCompleto" required name="Name">
+                      </div>
+                      <div class="mb-3">
+                          <label for="fechaNacimiento" class="form-label text-light">Fecha de Nacimiento</label>
+                          <input type="date" class="form-control" id="fechaNacimiento" required name="Date">
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label text-light">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required name="Email">
+                      </div>
+                      <div class="mb-3">
+                          <label for="ingreso" class="form-label text-light">Rango de Ingreso</label>
+                          <input type="number" class="form-control" id="ingreso" name="number" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="genero" class="form-label text-light">Género</label>
+                          <select class="form-select" id="Genero" required name="form-select">
+                              <option value="">Selecciona...</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="femenino">Femenino</option>
+                              <option value="otro">Otro</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="gradoAcademico" class="form-label text-light">Grado Académico</label>
+                          <select class="form-select" id="gradoAcademico" multiple required name="form-select" >
+                              <option value="bachillerato">Bachillerato</option>
+                              <option value="licenciatura">Licenciatura</option>
+                              <option value="maestria">Maestría</option>
+                              <option value="doctorado">Doctorado</option>
+                          </select>
+                      </div>
+                      <button type="submit" class="btn botonesColor">Enviar Mensaje</button>
+                  </form>
+                  <script src="js/script.js"></script>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+            </div>
+            <div class="col-lg-4 col-sm-12 mt-4 mb-sm-3 map-container">
+              <h3 class="text-light text-center">Estamos aquí</h3>
+              <h6 class="u-text u-text-5 text-light text-center">Lunes a viernes de 8:30 a. m. a 5 p. m.</h6>
+
+              <div class="u-expanded-width-sm u-expanded-width-xs u-grey-light-2 u-map u-map-1">
+                  <div class="embed-responsive col-lg-12 col-sm-12">
+                    <div id="map"></div>
+                      <script src="js/script.js"></script>
+                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSN5qySSOvHtrtHNgEL60P1rtV5ymxA78&callback=iniciarMap"></script>
+                  </div>
+
+              </div>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+<div class="container-fluid bg-dark align-content-center ">
+
+  <div class="row justify-content-center">
+      <div class="col-lg-3 col-sm-12 h-120 text-light text-sm-center text-lg-start">
+          <h1 class="fw-bold text-light mb-4 fs-3 mb-4 mt-3">Floristeria Francis</h1>
+          <p class=" text-light">Tu floristeria de confianza</p>
+      </div>
+
+      <div class="col-lg-3 col-sm-12  text-light text-sm-center text-lg-start">
+          <h4 class="footerTitle text-light mb-4 mt-3">Dirección</h4>
+          <p><i class=" text-light"></i>San Ramón, Alajuela, CR</p>
+          <p><i class=" text-light"></i>+506 8819 1327</p>
+          <p><i class=" text-light"></i>info@floristeria.com</p>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 text-light text-sm-center text-lg-start">
+          <h4 class="footerTitle text-light mb-4 mt-3 text-light">Accesos Rápidos</h4>
+          <a class="botFooter fas fa-angle-right mr-3 text-light" href="#nosotros">Nosotros</a><br>
+          <a class="botFooter fas fa-angle-right mr-3 text-light" href="tel:+50688191327">Llamenos</a><br>
+          <a class="botFooter fas fa-angle-right mr-3 text-light" href="#servicios">Servicios</a><br>
+          <a class="botFooter fas fa-angle-right mr-3 text-light" href="#formulario">Soporte</a><br>
+      </div>
+
+      <div class="text-center py-4 align-items-center">
+        <a href="https://www.instagram.com/francismendeztrejos/" class="btn btn-light m-1 custom-bg" role="button" data-mdb-ripple-init
+           rel="nofollow" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/FloristeriaFrancis?locale=es_LA" class="btn btn-light m-1 custom-bg" role="button" rel="nofollow" data-mdb-ripple-init
+           target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/+50688191327" class="btn btn-light m-1 custom-bg" role="button" rel="nofollow" data-mdb-ripple-init
+           target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:mendez.daniela1199@gmail.com" class="btn btn-light m-1 custom-bg" role="button" rel="nofollow" data-mdb-ripple-init
+           target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
+
