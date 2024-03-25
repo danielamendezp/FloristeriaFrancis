@@ -47,14 +47,13 @@
       height: 150px; 
   }
 
- 
   .navbar-nav {
-      flex-direction: row;
-      text-align: end;
-      justify-content: flex-end;
-      background-color: rgb(252, 252, 252);
-      width: 30%;
-      padding: 1%;
+    flex-direction: row;
+    text-align: end;
+    justify-content: flex-end;
+    background-color: rgb(252, 252, 252);
+    width: 36%;
+    padding: 1%;
   }
 
 }
@@ -62,7 +61,8 @@
 #json-gallery .gallery-item {
   width: 400px; 
   height: 400px;
-  margin-top: 2px; 
+  justify-content: center;
+  align-items: center;
 }
 
 #json-gallery .gallery-item img {

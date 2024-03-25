@@ -58,22 +58,29 @@
 
 @media (max-width: 900px) {
     .redesImage {
-        width: 150px; 
-        height: 150px; 
+        width: 150px;
+        height: 150px;
     }
 
     #demo .carousel-inner {
-        height: 400px; 
+        height: 400px;
     }
+
+    #demo .carousel-inner img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        min-height: 400px; 
+    }
+
     .navbar-nav {
         flex-direction: row;
         text-align: end;
         justify-content: flex-end;
         background-color: rgb(252, 252, 252);
-        width: 30%;
+        width: 36%;
         padding: 1%;
     }
-
 }
 
 .overlay {

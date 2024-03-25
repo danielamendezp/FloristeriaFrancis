@@ -1,34 +1,40 @@
-$(function() {
-    var jsonUrl = $("#json-gallery").data("json-url");
-    jsonGallery(jsonUrl);
-  
-    function jsonGallery(jsonUrl) {
-        var galleryContainer = $("#json-gallery");
-  
-        fetch(jsonUrl)
-            .then(response => response.json())
-            .then(data => {
+var jsonUrl = $("#json-gallery").data("json-url");
+var jsonLoaded = false; 
+
+function jsonGallery(jsonUrl) {
+    var galleryContainer = $("#json-gallery");
+
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (!jsonLoaded) { 
                 var tempImages = [];
                 data.forEach(function(image) {
                     if (!tempImages.some(img => img.url === image.url)) {
                         tempImages.push(image);
                     }
                 });
-  
+
                 tempImages.forEach(function(image) {
                     var col = $("<div>").addClass("gallery-item"); 
                     var img = $("<img>").addClass("img-fluid");
                     img.attr("src", image.url);
                     img.attr("alt", image.alt);
-  
+
                     col.append(img);
                     galleryContainer.append(col);
                 });
-            })
-            .catch(error => console.error("Error al cargar el JSON:", error));
-    }
-  });
-  
+
+                jsonLoaded = true; 
+            }
+        })
+        .catch(error => console.error("Error al cargar el JSON:", error));
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    jsonGallery(jsonUrl);
+});
+
 
 
 
