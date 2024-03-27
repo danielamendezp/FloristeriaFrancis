@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function iniciarMap() {
-  var coord = { lat: 10.0957067, lng: -84.4707245 };
-  var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: coord
-  });
-  var marker = new google.maps.Marker({
-      position: coord,
-      map: map
-  });
+    var coord = { lat: 10.0952946, lng: -84.4712706 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: coord
+    });
+    var marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    });
 }
