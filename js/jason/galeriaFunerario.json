@@ -1,55 +1,67 @@
 [
     {
-        "url": "/img/Funerario/1.jpeg",
+        "url": "Funerario/1.jpeg",
         "alt": "Image 1"
     },
     {
-        "url": "/img/Funerario/2.jpg",
+        "url": "Funerario/2.jpg",
         "alt": "Image 2"
     },
     {
-        "url": "/img/Funerario/3.jpg",
+        "url": "Funerario/3.jpg",
         "alt": "Image 3"
     },
     {
-        "url": "/img/Funerario/4.jpg",
+        "url": "Funerario/4.jpg",
         "alt": "Image 4"
     },
     {
-        "url": "/img/Funerario/5.jpg",
+        "url": "Funerario/5.jpg",
         "alt": "Image 5"
     },
     {
-          "url": "/img/Funerario/6.jpeg",
+          "url": "Funerario/6.jpeg",
           "alt": "Image 6"
       },
     {
-        "url": "/img/Funerario/7.jpeg",
+        "url": "Funerario/7.jpeg",
         "alt": "Image 7"
     },
     {
-        "url": "/img/Funerario/8.jpeg",
+        "url": "Funerario/8.jpeg",
         "alt": "Image 8"
     },
     {
-        "url": "/img/Funerario/9.jpeg",
+        "url": "Funerario/9.jpeg",
         "alt": "Image 9"
     },
     {
-        "url": "/img/Funerario/10.jpeg",
+        "url": "Funerario/10.jpeg",
         "alt": "Image 10"
     },
     {
-        "url": "/img/Funerario/12.jpeg",
+        "url": "Funerario/12.jpeg",
         "alt": "Image 12"
     },
     {
-        "url": "/img/Funerario/13.jpeg",
+        "url": "Funerario/13.jpeg",
         "alt": "Image 13"
     },
     {
-        "url": "/img/Funerario/14.jpeg",
+        "url": "Funerario/14.jpeg",
         "alt": "Image 14"
-    }   
+    },
+    {
+        "url": "Funerario/15.jpeg",
+        "alt": "Image 15"
+    } ,
+    {
+        "url": "Funerario/16.jpeg",
+        "alt": "Image 16"
+    } ,
+    {
+        "url": "Funerario/17.jpeg",
+        "alt": "Image 17"
+    }    
   ]
   

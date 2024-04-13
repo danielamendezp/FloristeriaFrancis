@@ -132,7 +132,7 @@
             En Floristería Francis, entendemos la importancia de cada ocasión especial y nos comprometemos a ofrecerte una experiencia personalizada y llena de belleza floral. Confía en nosotros para convertir tus momentos más importantes en memorias inolvidables.
           </p>
           <p class="text-muted">
-            Con más de 20 años de experiencia en la industria floral, Floristería Francis se enorgullece de ser un pilar en la comunidad de San Ramón de Alajuela. Durante estas dos décadas de trabajo apasionado, hemos tenido el privilegio de acompañar a nuestros clientes en momentos emotivos y significativos de sus vidas.
+            Con más de 40 años de experiencia en la industria floral, Floristería Francis se enorgullece de ser un pilar en la comunidad de San Ramón de Alajuela. Durante estas cuatro décadas de trabajo apasionado, hemos tenido el privilegio de acompañar a nuestros clientes en momentos emotivos y significativos de sus vidas.
           </p>
           
         </div>
@@ -237,13 +237,13 @@
 <section class="container-fluid section-background" id="sec-0abe" data-image-height="700" style="background-image: url('img/flor.webp');">
   <div class="overlay"></div>
   <div class="row">
-        <div class="u-form u-form-1 col-lg-7 col-sm-12 mt-4 form-container" id="formularioContacto" action="https://formsubmit.co/mendez.daniela1199@gmail.com" method="POST">
+        <div class="u-form u-form-1 col-lg-7 col-sm-12 mt-4 form-container" id="formularioContacto">
 
                   <h3 class="u-text u-text-2 text-light text-center">¡Envíanos tu consulta o cotización!</h3>
-                  <form class="container-fluid mt-lg-4 mb-lg-4 w-50" id="formularioContacto" onsubmit="sendEmail()">
+                  <form class="container-fluid mt-lg-4 mb-lg-4 w-50" id="formularioContacto" >
                       <div class="mb-3">
                           <label for="nombreCompleto" class="form-label text-light">Nombre Completo</label>
-                          <input type="text" class="form-control" id="nombreCompleto" required name="Name">
+                          <input type="text" class="form-control" id="nombreCompleto" required name="Nombre">
                       </div>
                       <div class="mb-3">
                           <label for="fechaNacimiento" class="form-label text-light">Fecha de Nacimiento</label>
@@ -275,10 +275,16 @@
                               <option value="doctorado">Doctorado</option>
                           </select>
                       </div>
-                      <button type="submit" class="btn botonesColor">Enviar Mensaje</button>
+
+                      <div class="mb-3">
+                        <label for="Mensaje" class="form-label text-light">Mensaje</label>
+                        <input type="text" style="height: 100px; overflow: scroll;" class="form-control" id="Mensaje" required name="Mensaje">
+                    </div>
+
+                    <button id="enviarBtn" type="button" class="btn botonesColor">Enviar Mensaje</button>
+
+
                   </form>
-                  <script src="js/script.js"></script>
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
             </div>
             <div class="col-lg-4 col-sm-12 mt-4 mb-sm-3 map-container">
               <h3 class="text-light text-center">Estamos aquí</h3>
@@ -295,6 +301,7 @@
           </div>
     </div>
 </section>
+<script src="js/script.js"></script>
 
 <div class="container-fluid bg-dark align-content-center text-sm-center">
 
