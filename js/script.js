@@ -8,11 +8,8 @@ $('#enviarBtn').click(function(){
   var Mensaje = document.getElementById("Mensaje").value;
 
   var cuerpoCorreo = "Nombre: " + nombreCompleto +
-          "\n\nFecha de Nacimiento: " + fechaNacimiento +
+         
           "\n\nEmail: " + email +
-          "\n\nRango de Ingreso: " + ingreso +
-          "\n\nGénero: " + genero +
-          "\n\nGrado Académico: " + gradoAcademico+
           "\n\nMensaje: " + Mensaje ;
 
   var subject = "Consulta o cotización de " + nombreCompleto;
